@@ -1,0 +1,227 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página */
+.background-collage {
+    background-image: url('imagenes/collagepp.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Contenedor central para el contenido */
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Encabezado */
+#header {
+    text-align: center;
+    display: block;
+    padding: 15px 30px;
+    margin: 1px;
+    background-color: #db5151;
+    color: rgb(255, 210, 114);
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor de los botones */
+#buttons-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    display: block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #93b7e0;
+    color: rgb(202, 211, 126);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.button:hover {
+    background-color: #93dfd2;
+}
+
+/* Campo de entrada y botón para filtrar */
+.filter {
+    margin-top: 20px;
+}
+
+.filter input {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+    border: 1px solid #76c5bb;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    background-color: #70abc2;
+    color: rgb(247, 245, 127);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #99df9f;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 2em;
+    }
+
+    #header p {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .filter input, .filter button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #buttons-container {
+        width: 90%;
+        top: 60%;
+    }
+}
+/*pagina sitos_turisticos*/
+
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e79d80; /* Color de fondo de la página */
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ec4747; /* Color de fondo del encabezado */
+    color: rgb(236, 221, 140);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la pagina de proyecto */
+
+.project-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 400px;  /* Tamaño fijo para el ancho */
+    height: 400px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que encaje dentro del contenedor */
+    border-radius: 8px;
+}
+
+/* Estilo para la sección turística */
+.tourist-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2c5c5; /* Color de fondo de la sección */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido textual */
+.tourist-content {
+    width: 60%;
+}
+
+/* Imagen de la sección */
+.tourist-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reducción de tamaño de la imagen */
+.tourist-image img {
+    width: 350px;  /* Tamaño fijo para el ancho */
+    height: 240px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que encaje dentro del contenedor */
+    border-radius: 8px;
+}
+
+/* Estilo para cambiar colores de secciones al pasar el mouse */
+.tourist-site:hover {
+    background-color: #facf8f9c; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tourist-site {
+        flex-direction: column;
+    }
+
+    .tourist-content, .tourist-image {
+        width: 100%;
+    }
+
+    .tourist-image img {
+        margin-top: 15px;
+        width: 100px;  /* Ajusta el tamaño en pantallas pequeñas */
+        height: 100px; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}
